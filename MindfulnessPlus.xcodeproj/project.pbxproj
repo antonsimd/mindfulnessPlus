@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093910FE2B33FE2500094992 /* ModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093910FD2B33FE2500094992 /* ModeModel.swift */; };
+		093911012B340CEE00094992 /* ToDoListMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093911002B340CEE00094992 /* ToDoListMainView.swift */; };
+		093911042B340FAB00094992 /* GratitudeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093911032B340FAB00094992 /* GratitudeMainView.swift */; };
 		09C58E5D2B312F62005D1B6E /* MindfulnessPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C58E5C2B312F62005D1B6E /* MindfulnessPlusApp.swift */; };
 		09C58E5F2B312F62005D1B6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C58E5E2B312F62005D1B6E /* ContentView.swift */; };
 		09C58E612B312F64005D1B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C58E602B312F64005D1B6E /* Assets.xcassets */; };
 		09C58E642B312F64005D1B6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C58E632B312F64005D1B6E /* Preview Assets.xcassets */; };
+		09C58E6F2B3130E9005D1B6E /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C58E6E2B3130E9005D1B6E /* MainMenuView.swift */; };
+		09C58E722B316020005D1B6E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C58E712B316020005D1B6E /* HeaderView.swift */; };
+		09C58E742B3165C9005D1B6E /* MainMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C58E732B3165C9005D1B6E /* MainMenuButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		093910FD2B33FE2500094992 /* ModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeModel.swift; sourceTree = "<group>"; };
+		093911002B340CEE00094992 /* ToDoListMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListMainView.swift; sourceTree = "<group>"; };
+		093911032B340FAB00094992 /* GratitudeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeMainView.swift; sourceTree = "<group>"; };
 		09C58E592B312F62005D1B6E /* MindfulnessPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindfulnessPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C58E5C2B312F62005D1B6E /* MindfulnessPlusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulnessPlusApp.swift; sourceTree = "<group>"; };
 		09C58E5E2B312F62005D1B6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09C58E602B312F64005D1B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C58E632B312F64005D1B6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09C58E6E2B3130E9005D1B6E /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		09C58E712B316020005D1B6E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		09C58E732B3165C9005D1B6E /* MainMenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		093910FC2B33FE0F00094992 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				093910FD2B33FE2500094992 /* ModeModel.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		093910FF2B340CCD00094992 /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				093911002B340CEE00094992 /* ToDoListMainView.swift */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		093911022B340F9700094992 /* Gratitude */ = {
+			isa = PBXGroup;
+			children = (
+				093911032B340FAB00094992 /* GratitudeMainView.swift */,
+			);
+			path = Gratitude;
+			sourceTree = "<group>";
+		};
 		09C58E502B312F62005D1B6E = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +87,12 @@
 		09C58E5B2B312F62005D1B6E /* MindfulnessPlus */ = {
 			isa = PBXGroup;
 			children = (
-				09C58E5C2B312F62005D1B6E /* MindfulnessPlusApp.swift */,
+				09C58E6D2B3130C9005D1B6E /* Other */,
+				09C58E6C2B3130B7005D1B6E /* Models */,
+				09C58E6B2B3130A8005D1B6E /* ViewModels */,
+				09C58E6A2B31309A005D1B6E /* Views */,
 				09C58E5E2B312F62005D1B6E /* ContentView.swift */,
+				09C58E5C2B312F62005D1B6E /* MindfulnessPlusApp.swift */,
 				09C58E602B312F64005D1B6E /* Assets.xcassets */,
 				09C58E622B312F64005D1B6E /* Preview Content */,
 			);
@@ -65,6 +105,56 @@
 				09C58E632B312F64005D1B6E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09C58E6A2B31309A005D1B6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09FB14E12B351CBD000E7C8D /* Generic */,
+				093911022B340F9700094992 /* Gratitude */,
+				093910FF2B340CCD00094992 /* ToDoList */,
+				09C58E702B314064005D1B6E /* MainMenu */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		09C58E6B2B3130A8005D1B6E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		09C58E6C2B3130B7005D1B6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				093910FC2B33FE0F00094992 /* MainMenu */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09C58E6D2B3130C9005D1B6E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		09C58E702B314064005D1B6E /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				09C58E6E2B3130E9005D1B6E /* MainMenuView.swift */,
+				09C58E732B3165C9005D1B6E /* MainMenuButtonView.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		09FB14E12B351CBD000E7C8D /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				09C58E712B316020005D1B6E /* HeaderView.swift */,
+			);
+			path = Generic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +228,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C58E5F2B312F62005D1B6E /* ContentView.swift in Sources */,
+				09C58E722B316020005D1B6E /* HeaderView.swift in Sources */,
+				093911012B340CEE00094992 /* ToDoListMainView.swift in Sources */,
+				093911042B340FAB00094992 /* GratitudeMainView.swift in Sources */,
+				093910FE2B33FE2500094992 /* ModeModel.swift in Sources */,
+				09C58E742B3165C9005D1B6E /* MainMenuButtonView.swift in Sources */,
+				09C58E6F2B3130E9005D1B6E /* MainMenuView.swift in Sources */,
 				09C58E5D2B312F62005D1B6E /* MindfulnessPlusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
