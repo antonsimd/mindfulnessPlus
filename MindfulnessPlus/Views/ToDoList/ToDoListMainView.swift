@@ -9,15 +9,30 @@ import SwiftUI
 
 struct ToDoListMainView: View {
     var body: some View {
-        VStack {
-            HeaderView(foregroundColor: .brown, titleText: "To Do")
-            
-            
-            Spacer()
+        List {
+            HStack {
+                Image(systemName: "checkmark.circle")
+                    .foregroundStyle(Color.green)
+                Text("Sample text")
+            }
+        }
+        .listStyle(InsetGroupedListStyle())
+        .navigationTitle("To do today")
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                EditButton()
+            }
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Add") {
+                    
+                }
+            }
         }
     }
 }
 
 #Preview {
-    ToDoListMainView()
+    NavigationView {
+        ToDoListMainView()
+    }
 }

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct HeaderView: View {
-    @State var foregroundColor: Color
-    @State var titleText: String = "Mindfulness+"
+    let foregroundColor: Color
+    var titleText: String = "Mindfulness+"
     
     var body: some View {
         ZStack(content: {

@@ -19,7 +19,12 @@ struct MainMenuView: View {
                     // Mindfulness exercises
                     ScrollView {
                         VStack {
-                            MainMenuButtonView(modeType: text)
+                            NavigationLink {
+                                ToDoListMainView()
+                            } label: {
+                                MainMenuButtonView(modeType: text)
+                            }
+                            
                             MainMenuButtonView(modeType: text2)
                         }
                     }
