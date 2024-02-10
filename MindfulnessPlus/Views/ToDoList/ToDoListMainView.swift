@@ -23,8 +23,8 @@ struct ToDoListMainView: View {
                 EditButton()
             }
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Add") {
-                    
+                NavigationLink("Add") {
+                    Text("Destination")
                 }
             }
         }
