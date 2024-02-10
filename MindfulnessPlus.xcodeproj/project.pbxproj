@@ -18,6 +18,9 @@
 		09C58E722B316020005D1B6E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C58E712B316020005D1B6E /* HeaderView.swift */; };
 		09C58E742B3165C9005D1B6E /* MainMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C58E732B3165C9005D1B6E /* MainMenuButtonView.swift */; };
 		09C83E9E2B7767D600897797 /* ToDoListAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C83E9D2B7767D600897797 /* ToDoListAddView.swift */; };
+		09C83EA12B777FD400897797 /* ToDoListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C83EA02B777FD400897797 /* ToDoListItemModel.swift */; };
+		09C83EA32B7780CD00897797 /* ToDoListItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C83EA22B7780CD00897797 /* ToDoListItemRowView.swift */; };
+		09C83EA62B77893400897797 /* ToDoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C83EA52B77893400897797 /* ToDoListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		09C58E712B316020005D1B6E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		09C58E732B3165C9005D1B6E /* MainMenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuButtonView.swift; sourceTree = "<group>"; };
 		09C83E9D2B7767D600897797 /* ToDoListAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListAddView.swift; sourceTree = "<group>"; };
+		09C83EA02B777FD400897797 /* ToDoListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemModel.swift; sourceTree = "<group>"; };
+		09C83EA22B7780CD00897797 /* ToDoListItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemRowView.swift; sourceTree = "<group>"; };
+		09C83EA52B77893400897797 /* ToDoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			children = (
 				093911002B340CEE00094992 /* ToDoListMainView.swift */,
 				09C83E9D2B7767D600897797 /* ToDoListAddView.swift */,
+				09C83EA22B7780CD00897797 /* ToDoListItemRowView.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -124,6 +131,7 @@
 		09C58E6B2B3130A8005D1B6E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				09C83EA42B77891900897797 /* ToDoList */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 		09C58E6C2B3130B7005D1B6E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				09C83E9F2B777FB100897797 /* ToDoLIst */,
 				093910FC2B33FE0F00094992 /* MainMenu */,
 			);
 			path = Models;
@@ -150,6 +159,22 @@
 				09C58E732B3165C9005D1B6E /* MainMenuButtonView.swift */,
 			);
 			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		09C83E9F2B777FB100897797 /* ToDoLIst */ = {
+			isa = PBXGroup;
+			children = (
+				09C83EA02B777FD400897797 /* ToDoListItemModel.swift */,
+			);
+			path = ToDoLIst;
+			sourceTree = "<group>";
+		};
+		09C83EA42B77891900897797 /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				09C83EA52B77893400897797 /* ToDoListViewModel.swift */,
+			);
+			path = ToDoList;
 			sourceTree = "<group>";
 		};
 		09FB14E12B351CBD000E7C8D /* Generic */ = {
@@ -230,11 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C83EA62B77893400897797 /* ToDoListViewModel.swift in Sources */,
+				09C83EA12B777FD400897797 /* ToDoListItemModel.swift in Sources */,
 				09C58E5F2B312F62005D1B6E /* ContentView.swift in Sources */,
 				09C58E722B316020005D1B6E /* HeaderView.swift in Sources */,
 				093911012B340CEE00094992 /* ToDoListMainView.swift in Sources */,
 				093911042B340FAB00094992 /* GratitudeMainView.swift in Sources */,
 				093910FE2B33FE2500094992 /* ModeModel.swift in Sources */,
+				09C83EA32B7780CD00897797 /* ToDoListItemRowView.swift in Sources */,
 				09C58E742B3165C9005D1B6E /* MainMenuButtonView.swift in Sources */,
 				09C58E6F2B3130E9005D1B6E /* MainMenuView.swift in Sources */,
 				09C58E5D2B312F62005D1B6E /* MindfulnessPlusApp.swift in Sources */,

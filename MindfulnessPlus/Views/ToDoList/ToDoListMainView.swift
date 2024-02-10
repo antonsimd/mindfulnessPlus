@@ -8,24 +8,34 @@
 import SwiftUI
 
 struct ToDoListMainView: View {
+    
+    @State var items: [ToDoListItemModel] = [
+        ToDoListItemModel(title: "First item", isCompleted: true),
+        ToDoListItemModel(title: "Second item", isCompleted: false),
+        ToDoListItemModel(title: "Third item", isCompleted: true)
+    ]
+    
     var body: some View {
         List {
-            HStack {
-                Image(systemName: "checkmark.circle")
-                    .foregroundStyle(Color.green)
-                Text("Sample text")
+            ForEach(items) { item in
+                ToDoListItemRowView(item: item)
             }
+            .onDelete(perform: { indexSet in
+                
+            })
         }
         .listStyle(InsetGroupedListStyle())
-        .navigationTitle("To do today")
+        .navigationTitle("To do today 🗒️")
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                EditButton()
-            }
+//            ToolbarItem(placement: .topBarLeading) {
+//                EditButton()
+//            }
             ToolbarItem(placement: .topBarTrailing) {
-                NavigationLink("Add") {
-                    Text("Destination")
+                NavigationLink("+") {
+                    ToDoListAddView()
                 }
+                .font(.largeTitle)
+                .fontWeight(.light)
             }
         }
     }

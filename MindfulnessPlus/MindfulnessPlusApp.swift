@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct MindfulnessPlusApp: App {
+    
+    @StateObject var todoListViewModel: ToDoListViewModel = ToDoListViewModel()
+    
     var body: some Scene {
         WindowGroup {
             MainMenuView()
