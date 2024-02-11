@@ -28,4 +28,13 @@ class ToDoListViewModel: ObservableObject {
     func deleteItems(indexSet: IndexSet) {
         items.remove(atOffsets: indexSet)
     }
+    
+    func moveItems(from: IndexSet, to: Int) {
+        items.move(fromOffsets: from, toOffset: to)
+    }
+    
+    func addItem(title: String) {
+        let newItem: ToDoListItemModel = ToDoListItemModel(title: title, isCompleted: false)
+        items.append(newItem)
+    }
 }

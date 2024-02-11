@@ -29,5 +29,5 @@ struct HeaderView: View {
 }
 
 #Preview {
-    HeaderView(foregroundColor: .cyan)
+    HeaderView(foregroundColor: .accentColor)
 }

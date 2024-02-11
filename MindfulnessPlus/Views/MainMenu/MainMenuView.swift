@@ -38,7 +38,7 @@ struct MainMenuView: View {
                 
                 // Header
                 VStack {
-                    HeaderView(foregroundColor: .cyan)
+                    HeaderView(foregroundColor: .accentColor)
                     
                     Spacer()
                 }

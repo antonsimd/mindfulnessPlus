@@ -9,30 +9,25 @@ import SwiftUI
 
 struct ToDoListMainView: View {
     
-    @State var items: [ToDoListItemModel] = [
-        ToDoListItemModel(title: "First item", isCompleted: true),
-        ToDoListItemModel(title: "Second item", isCompleted: false),
-        ToDoListItemModel(title: "Third item", isCompleted: true)
-    ]
+    @StateObject var listViewModel: ToDoListViewModel = ToDoListViewModel()
     
     var body: some View {
         List {
-            ForEach(items) { item in
+            ForEach(listViewModel.items) { item in
                 ToDoListItemRowView(item: item)
             }
-            .onDelete(perform: { indexSet in
-                
-            })
+            .onDelete(perform: listViewModel.deleteItems)
+            .onMove(perform: listViewModel.moveItems)
         }
         .listStyle(InsetGroupedListStyle())
         .navigationTitle("To do today 🗒️")
         .toolbar {
-//            ToolbarItem(placement: .topBarLeading) {
-//                EditButton()
-//            }
+            ToolbarItem(placement: .topBarTrailing) {
+                EditButton()
+            }
             ToolbarItem(placement: .topBarTrailing) {
                 NavigationLink("+") {
-                    ToDoListAddView()
+                    ToDoListAddView(listViewModel: listViewModel)
                 }
                 .font(.largeTitle)
                 .fontWeight(.light)

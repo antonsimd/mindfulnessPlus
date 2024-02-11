@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ToDoListAddView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    @State var listViewModel: ToDoListViewModel = ToDoListViewModel()
     @State var textFieldText: String = "";
     
     var body: some View {
@@ -21,7 +23,7 @@ struct ToDoListAddView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                 
                 Button(action: {
-                    
+                    saveButtonPressed()
                 }, label: {
                     Text("Save")
                         .foregroundStyle(Color.white)
@@ -34,6 +36,11 @@ struct ToDoListAddView: View {
             .padding()
         }
         .navigationTitle("Add an Item 🖋️")
+    }
+    
+    func saveButtonPressed() {
+        listViewModel.addItem(title: textFieldText)
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
