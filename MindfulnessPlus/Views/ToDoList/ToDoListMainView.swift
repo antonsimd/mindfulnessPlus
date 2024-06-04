@@ -11,13 +11,14 @@ struct ToDoListMainView: View {
     var body: some View {
         VStack {
             HeaderView(foregroundColor: .brown, titleText: "To Do")
-            
+                .offset(y: -35)
             
             Spacer()
         }
     }
 }
 
+// wrap this in a preview
 #Preview {
     ToDoListMainView()
 }
