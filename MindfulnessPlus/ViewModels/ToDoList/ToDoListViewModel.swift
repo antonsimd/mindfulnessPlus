@@ -37,4 +37,8 @@ class ToDoListViewModel: ObservableObject {
         let newItem: ToDoListItemModel = ToDoListItemModel(title: title, isCompleted: false)
         items.append(newItem)
     }
+    
+    func toggleItem(item: ToDoListItemModel) {
+        // let index = 
+    }
 }

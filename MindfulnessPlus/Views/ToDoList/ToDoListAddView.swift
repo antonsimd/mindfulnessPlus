@@ -11,7 +11,9 @@ struct ToDoListAddView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @State var listViewModel: ToDoListViewModel = ToDoListViewModel()
-    @State var textFieldText: String = "";
+    @State var textFieldText: String = ""
+    
+    @State var showingAlert: Bool = false
     
     var body: some View {
         ScrollView {
@@ -34,13 +36,24 @@ struct ToDoListAddView: View {
                 })
             }
             .padding()
+            .alert("Please enter a task to complete", isPresented: $showingAlert) {
+                Button("OK", role: .cancel) { }
+            }
         }
         .navigationTitle("Add an Item 🖋️")
     }
     
     func saveButtonPressed() {
-        listViewModel.addItem(title: textFieldText)
-        presentationMode.wrappedValue.dismiss()
+        if textIsValid() {
+            listViewModel.addItem(title: textFieldText)
+            presentationMode.wrappedValue.dismiss()
+        } else {
+            showingAlert = true
+        }
+    }
+    
+    func textIsValid() -> Bool {
+        return textFieldText.count > 0
     }
 }
 
