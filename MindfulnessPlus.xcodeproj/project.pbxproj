@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,21 @@
 		09C58E712B316020005D1B6E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		09C58E732B3165C9005D1B6E /* MainMenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3A9BB1DE2CCA28430002F26B /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ToDoList/ToDoListVM.swift,
+			);
+			target = 09C58E582B312F62005D1B6E /* MindfulnessPlus */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3A9BB1D62CCA27B70002F26B /* ToDoList */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ToDoList; sourceTree = "<group>"; };
+		3A9BB1D92CCA27FD0002F26B /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3A9BB1DE2CCA28430002F26B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		09C58E562B312F62005D1B6E /* Frameworks */ = {
@@ -87,9 +102,8 @@
 		09C58E5B2B312F62005D1B6E /* MindfulnessPlus */ = {
 			isa = PBXGroup;
 			children = (
-				09C58E6D2B3130C9005D1B6E /* Other */,
 				09C58E6C2B3130B7005D1B6E /* Models */,
-				09C58E6B2B3130A8005D1B6E /* ViewModels */,
+				3A9BB1D92CCA27FD0002F26B /* ViewModels */,
 				09C58E6A2B31309A005D1B6E /* Views */,
 				09C58E5E2B312F62005D1B6E /* ContentView.swift */,
 				09C58E5C2B312F62005D1B6E /* MindfulnessPlusApp.swift */,
@@ -118,26 +132,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		09C58E6B2B3130A8005D1B6E /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		09C58E6C2B3130B7005D1B6E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3A9BB1D62CCA27B70002F26B /* ToDoList */,
 				093910FC2B33FE0F00094992 /* MainMenu */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		09C58E6D2B3130C9005D1B6E /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		09C58E702B314064005D1B6E /* MainMenu */ = {
@@ -171,6 +172,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3A9BB1D62CCA27B70002F26B /* ToDoList */,
 			);
 			name = MindfulnessPlus;
 			productName = MindfulnessPlus;
