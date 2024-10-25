@@ -13,7 +13,11 @@ struct ToDoListMainView: View {
             HeaderView(foregroundColor: .brown, titleText: "To Do")
             
             ScrollView {
+<<<<<<< HEAD
                 
+=======
+                MainMenuButtonView(modeType: MainMenuView)
+>>>>>>> f935c2e44a542752a7de4c3a625cdbbfe3a2d590
             }
             Spacer()
         }

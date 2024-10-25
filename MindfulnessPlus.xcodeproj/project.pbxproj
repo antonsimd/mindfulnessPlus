@@ -34,10 +34,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+<<<<<<< HEAD
 		3A9BB1E22CCA3CD20002F26B /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				ToDoList/ToDoItemVM.swift,
+=======
+		3A9BB1DE2CCA28430002F26B /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ToDoList/ToDoListVM.swift,
+>>>>>>> f935c2e44a542752a7de4c3a625cdbbfe3a2d590
 			);
 			target = 09C58E582B312F62005D1B6E /* MindfulnessPlus */;
 		};
@@ -45,7 +52,11 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3A9BB1D62CCA27B70002F26B /* ToDoList */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ToDoList; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		3A9BB1D92CCA27FD0002F26B /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3A9BB1E22CCA3CD20002F26B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
+=======
+		3A9BB1D92CCA27FD0002F26B /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3A9BB1DE2CCA28430002F26B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
+>>>>>>> f935c2e44a542752a7de4c3a625cdbbfe3a2d590
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
