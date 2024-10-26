@@ -8,7 +8,6 @@
 import Foundation
 import SwiftData
 
-<<<<<<< HEAD
 public class ToDoItemModel: Codable, Identifiable {
     @Attribute(.unique) public var id: UUID
     public var title: String
@@ -19,10 +18,4 @@ public class ToDoItemModel: Codable, Identifiable {
         self.title = title
         self.isCompleted = false
     }
-=======
-final public class ToDoItemModel: Codable, Identifiable {
-    @Attribute(.unique) public var id: UUID
-    public var title: String
-    public var isCompleted: Bool
->>>>>>> f935c2e44a542752a7de4c3a625cdbbfe3a2d590
 }
