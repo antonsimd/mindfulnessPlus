@@ -8,7 +8,8 @@
 import Foundation
 import SwiftData
 
-public class ToDoItemModel: Codable, Identifiable {
+@Model
+class ToDoItemModel {
     @Attribute(.unique) public var id: UUID
     public var title: String
     public var isCompleted: Bool

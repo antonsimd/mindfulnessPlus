@@ -28,4 +28,8 @@ public class ToDoItemVM: ObservableObject {
     public func newItem(title: String) {
         items.append(ToDoItemModel(title: title))
     }
+    
+    public func save() {
+        
+    }
 }

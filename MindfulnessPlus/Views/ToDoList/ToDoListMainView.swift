@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct ToDoListMainView: View {
+    @State var items: [ToDoItemModel] = [
+        ToDoItemModel(title: "First item"),
+        ToDoItemModel(title: "Second item"),
+        ToDoItemModel(title: "Third item"),
+    ]
+    
     var body: some View {
         VStack {
             HeaderView(foregroundColor: .brown, titleText: "To Do")
             
             ScrollView {
-                
+                ForEach(items) { item in
+                    Text(item.title)
+                        .font(.headline)
+                        .padding()
+                        .background(Color.blue)
+                }
             }
             Spacer()
         }
